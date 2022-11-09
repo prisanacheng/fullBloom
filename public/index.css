@@ -1,0 +1,434 @@
+/* Rufina */
+@import url("https://fonts.googleapis.com/css2?family=Rufina&display=swap");
+/* Sintony */
+@import url("https://fonts.googleapis.com/css2?family=Sintony&display=swap");
+/* Forum */
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+
+:root {
+  --blanc: #eae5e1;
+  --sage: #b5c3aa;
+  --vine: #545445;
+  --rose: #d8bfb2;
+  --cab: #995c41;
+  --terrace: #d4c7be;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: var(--blanc);
+}
+
+h1 {
+  font-family: Sintony;
+  align-self: center;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+h2 {
+  font-family: Rufina;
+}
+
+h3 {
+  font-family: Sintony;
+}
+
+button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: var(--vine);
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Sintony;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+
+button:hover {
+  background-color: #888881;
+}
+
+#cartcontainer {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  margin: 20px;
+  border: solid 2px var(--cab);
+  border-radius: 25px;
+}
+
+.ProductImage {
+  margin-right: 30px;
+}
+
+.BoxText {
+  color: black;
+}
+
+.CartText {
+  font-size: 16px;
+}
+
+.CheckOutButton {
+  font-size: 16px;
+}
+
+#EditQuantity {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.LinkBox {
+  display: flex;
+  justify-content: space-between;
+  background-color: #545445;
+  padding: 25px;
+  align-items: baseline;
+  padding-bottom: 32px;
+}
+
+.headerLinks {
+  background-color: #545445;
+  font-family: Rufina;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--blanc);
+  padding: 10px;
+}
+
+.headerLinks:hover {
+  background-color: #888881;
+}
+
+.FullBloom {
+  display: flex;
+  justify-content: center;
+  font-family: Forum;
+  font-size: 48px;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  background-color: var(--blanc);
+}
+.FullBloom:hover {
+  color: #545445;
+}
+
+.CartIcon {
+  background-color: #545445;
+  margin-bottom: -5px;
+}
+
+.homeScreen {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("landing.jpeg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ShopAllPlants {
+  font-size: xx-large;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+}
+
+.ShopAllPlants:hover {
+  text-decoration: underline;
+}
+
+.MainBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.Message {
+  font-family: Rufino;
+}
+
+html {
+  touch-action: manipulation;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.AllPlantsPage {
+  display: flex;
+  flex-direction: row;
+}
+
+.productRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.EachProduct {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.ProductText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: sintony;
+  align-items: baseline;
+}
+.ProductLink {
+  align-self: center;
+  text-decoration: none;
+  background-color: #545445;
+  color: #fff;
+}
+.ProductLink:hover {
+  background-color: #888881;
+}
+.CategoryLinkBox {
+  background-color: var(--rose);
+  max-width: 500px;
+  min-width: 200px;
+  height: 100vh;
+}
+.AsideText {
+  display: flex;
+  flex-direction: column;
+}
+.ViewPlants {
+  text-align: center;
+  padding: 7px;
+  padding-bottom: 20px;
+  background-color: var(--rose);
+}
+.CategoryLink {
+  padding-left: 10px;
+  padding-bottom: 20px;
+  background-color: var(--rose);
+  text-decoration: none;
+  font-family: Sintony;
+  color: var(--vine);
+}
+.CategoryLink:hover {
+  text-decoration: underline;
+}
+.TitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin: 20px;
+  border: solid 2px var(--cab);
+  border-radius: 25px;
+  max-width: 500px;
+  align-content: center;
+  min-width: 500px;
+}
+
+.inputLabels {
+  font-family: Sintony;
+  padding-right: 100px;
+  margin-right: 100px;
+}
+
+.inputBox {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+}
+.Care {
+  display: flex;
+  flex-direction: column;
+}
+
+.careText {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 40px;
+}
+
+.careInstructions {
+  margin: 25px;
+  font-size: 25px;
+  font-family: Rufina;
+}
+
+.careImg {
+  margin: 25px;
+}
+
+.AccountBox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  padding: 50px;
+  margin: 20px;
+  border: solid 2px var(--cab);
+  border-radius: 25px;
+}
+
+#AccountLink {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Rufina;
+  color: var(--vine);
+  font-size: 35px;
+}
+
+#AccountLink:hover {
+  color: #888881;
+}
+
+.OrderHistoryText {
+  font-family: Rufina;
+  font-size: 20px;
+}
+
+.orderhisttitle {
+  font-size: 30px;
+  font-family: Rufina;
+}
+
+.SingleProductBox {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1000px;
+  padding-left: 50px;
+}
+
+.SingleProductText {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.productImage {
+  padding: 20px;
+}
+
+.OrderSummary {
+  margin-left: 50px;
+}
+
+.OrderText {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Rufina;
+}
+
+.orderProduct {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  margin: 20px;
+  border: solid 2px var(--cab);
+  border-radius: 25px;
+  align-content: flex-start;
+}
+
+#OrderImage {
+  display: flex;
+  align-self: flex-start;
+}
+
+.congratsText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.congratulationsLink {
+  text-decoration: none;
+  color: var(--vine);
+  font-family: Rufina;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.congratulationsLink:hover {
+  color: #888881;
+}
+
+.congratsHeader {
+  font-size: 40px;
+}
+
+.RightLinks {
+  background-color: var(--vine);
+}
+
+.AlertMessage {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.addToCartLink {
+  text-decoration: none;
+  color: var(--vine);
+  font-size: 30px;
+}
+
+.addToCartLink:hover {
+  color: #888881;
+}
