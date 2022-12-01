@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:4000/api";
-// const API_URL = "https://stark-escarpment-75238.herokuapp.com/api";
+// const API_URL = "http://localhost:4000/api";
+const API_URL = "https://stark-escarpment-75238.herokuapp.com/api";
 
 export async function LoginPerson(event) {
   try {
